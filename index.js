@@ -8,6 +8,16 @@ const { engine } = require("express-handlebars");
 const bodyParser = require("body-parser");
 require("dotenv").config();
 
+const mongoose = require("mongoose");
+
+mongoose
+    .connect(process.env.DATABASE, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    })
+    .then(() => {
+        console.log("DB CONNECTED");
+    })
 
 // const client = new MongoClient(uri, { useUnifiedTopology: true });
 const WSDBController = require("./controllers/wsdb");
