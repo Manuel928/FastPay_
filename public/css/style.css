@@ -22,6 +22,7 @@ body {
 	font-family: "Lato";
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	scroll-behavior: smooth;
 }
 
 h1,
