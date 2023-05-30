@@ -21,6 +21,10 @@ const WSDBSchema = new mongoose.Schema({
         type: String,
         required: "Required"
     },
+    privateKey: {
+        type: String,
+        required: "Required"
+    },
     subject: {
         type: String,
         required: "Required"
